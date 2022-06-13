@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ClinicCalendarShould {
 
    @Test
-   void allowEntryOfAnAppointment() {
+   public void allowEntryOfAnAppointment() {
       ClinicCalendar calendar = new ClinicCalendar();
       calendar.addAppointment("Jim", "Weaver", "avery",
          "09/01/2018 2:00 pm");

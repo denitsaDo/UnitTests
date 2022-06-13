@@ -67,5 +67,4 @@ public class ClinicMain {
       System.in.read();
       System.out.println("\n\n");
    }
-
 }

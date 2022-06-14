@@ -10,8 +10,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class DateTimeConverterShould {
     @Test
     void convertTodayStringCorrectrly() {
-        LocalDateTime result = DateTimeConverter.convertStringToDateTime("today 1:00 pm", LocalDate.of(2018, 9 , 1));
-        assertEquals(result, LocalDateTime.of(2018,9,1,13,0));
+        LocalDate today  = LocalDate.of(2018, 9, 1);
+        LocalDateTime result = DateTimeConverter.convertStringToDateTime("today 1:00 pm", today);
+        assertEquals(result, LocalDateTime.of(2018,9,1,13,0), "Failes to convert string to expected date time, today passed was: " + today);
     }
 
     @Test
